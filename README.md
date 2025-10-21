@@ -17,9 +17,12 @@ AI Makeup Mirror is an Expo + React Native demo that showcases the MVP experienc
 ```bash
 npm install
 npm run start
+# 在 Android 模拟器/真实设备上直接运行原生包
+npm run android:app
 ```
 
 在 Expo Dev Tools 中选择对应的运行平台（Android/iOS/Web）。
+如果需要直接在 Android 模拟器或连接的设备上安装原生调试包，可执行 `npm run android:app`，这会触发 `expo run:android` 生成并安装开发构建。
 
 ## Tech Stack
 
