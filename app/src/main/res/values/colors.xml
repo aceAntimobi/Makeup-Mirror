@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryPink">#FECDD3</color>
+    <color name="secondaryPink">#F9A8D4</color>
+    <color name="backgroundSoft">#FFF7FB</color>
+    <color name="textOnPrimary">#511F2D</color>
+</resources>
