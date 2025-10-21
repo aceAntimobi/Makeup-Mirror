@@ -25,6 +25,24 @@ npm run android:app
 在 Expo Dev Tools 中选择对应的运行平台（Android/iOS/Web）。
 如果需要直接在 Android 模拟器或连接的设备上安装原生调试包，可执行 `npm run android:app`，这会触发 `expo run:android` 生成并安装开发构建。确保当前终端路径位于项目根目录（包含 `package.json` 的文件夹），否则会出现 `ENOENT: no such file or directory, open '.../package.json'` 的错误。
 
+## 合并到主分支（main）
+
+当前开发在 `work` 分支进行。准备发布或需要产出稳定包时，将最新提交合并到 `main`：
+
+```bash
+git checkout main
+git merge work
+git push origin main
+```
+
+如果仓库中尚未创建 `main`，可先从当前提交创建：
+
+```bash
+git checkout -b main
+```
+
+更多分支操作细节与发布检查清单见 [docs/BRANCHING.md](./docs/BRANCHING.md)。
+
 ## Tech Stack
 
 - Expo（React Native）
